@@ -14,8 +14,16 @@ yum install mysql -y
  
 if [ $ -ne 0 ]
 then 
-    echo "ERROR:: installing my sql is failed"
+    echo "ERROR:: installing MySql is failed"
     exit 1
 else
     echo "Installing MySql is success"
+fi
+yum install git -y
+ if [ $ -ne 0 ]
+then 
+    echo "ERROR:: installing git is failed"
+    exit 1
+else
+    echo "Installing git is success"
 fi
